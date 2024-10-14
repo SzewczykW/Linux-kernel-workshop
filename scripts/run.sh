@@ -6,8 +6,6 @@ qemu-system-x86_64 \
   -drive format=raw,file=../buildroot/output/images/rootfs.ext4,if=virtio \
   -append "root=/dev/vda console=ttyS0 nokaslr other-paras-here-if-needed" \
   -m 4G \
-  -enable-kvm \
-  -cpu host \
   -smp $(nproc) \
   -net nic,model=virtio \
   -net user,hostfwd=tcp::10022-:22
