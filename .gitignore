@@ -1,0 +1,19 @@
+# Ignore everything
+*
+
+# Except these files ...
+!LICENSE
+!.gitignore
+!.gitmodules
+!.editorconfig
+!*.c
+!*.h
+!*.sh
+!Makefile
+!Kconfig
+
+# even if they are in subdirectories ...
+!*/
+
+# and exclude these
+*.mod.c
